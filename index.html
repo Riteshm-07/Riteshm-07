@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  <div class="box"><h1 text-color="red" align="center">Rits</h1></div>
+  <style>
+    body {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 100vh;
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  
+}
+
+.box:hover {
+  transform: scale(1.2);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.box {
+  animation: move 2s infinite;
+}
+   </style>
+
+</body></html>
